@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Über
+permalink: /Über/
 ---
 
 Diese Seite enthält geile Kurven.
