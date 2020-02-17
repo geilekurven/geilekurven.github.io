@@ -91,23 +91,12 @@ verschiedenen Würfeln und Zielwerten.
 ![](/figures/savage_worlds_thresholds.png)
 
 Zunächst ist zu beachten, dass die Erfolgswahrscheinlichkeiten hier auch für
-nicht-ganzzahlige Würfel aufgetragen ist, indem in obiger Formel naiv
+nicht-ganzzahlige Würfel aufgetragen sind, indem in obiger Formel naiv
 reelle Würfelwerte eingesetzt wurden.
 Die Kurven für feste Zielwerte $$t$$ sind zwar stetig, weisen aber Knicke auf. Diese
 Knicke treten bei $$d=t$$, $$t-1$$, $$t/2$$, $$(t-1)/2$$, ... auf. Dabei ist der
 Wert bei $$d=t$$ stets **geringer** als bei $$d=t-1$$, d.h. in diesem Bereich
 **sinkt die Erfolgswahrscheinlichkeit mit steigendem Würfelwert!**
-
-Die durchgezogene Linie von $$d=t-1$$ zu $$d=t$$ zeigt noch ein weiteres
-seltsames Verhalten: Die Linien von aller Zielwerte ergänzen sich zu einer
-Linie, wodurch eine netzartige Struktur ensteht.
-Die anderen Linien zeigen das selbe Verhalten.
-Diese "schneidenden" Linien stimmen mit $$1/d$$, $$1/d^2$$, ... überein.
-
-Daraus lässt sich schließen, dass die Wahrscheinlichkeit für einen Erfolg wenn
-der Zielwert $$t$$ dem Würfelwert $$d$$ entspricht gleich $$1/d$$ ist, wenn der
-Würfelwert aber mit $$d=t-1$$ geringer ist, die Erfolgswahrscheinlichkeit mit
-$$1/(d-1)$$ höher ist.
 
 Für das tatsächliche Spiel hat dieser Fall keine Auswirkungen, da nur gerade
 Würfel verwendet werden. Allerdings sind selbst bei Würfelwert $$d = t-2$$ die
@@ -115,3 +104,8 @@ Erfolgswahrscheinlichkeiten noch leicht gegenüber $$d = t$$ erhöht, **besonder
 bei Zielwert 6: Hier ist die Erfolgswahrscheinlichkeit mit einem W4 höher als
 mit einem W6**. In Zahlen: die Erfolgswahrscheinlichkeit mit W4 ist $$3/16 =
 18,75%$$, mit W6 ist sie $$1/6 \approx 16.67%$$.
+
+Die durchgezogene Linie von $$d=t-1$$ zu $$d=t$$ zeigt noch ein weiteres
+überraschendes Verhalten: Die Linien von aller Zielwerte ergänzen sich zu einer Linie.
+Die anderen Linien zeigen das selbe Verhalten.
+Diese "schneidenden" Linien stimmen mit $$1/d$$, $$1/d^2$$, ... überein.
