@@ -5,15 +5,14 @@ date:   2020-02-17 19:10:00 +0100
 math: true
 ---
 
-![](/figures/savage_worlds_probabilities.png)
+![](/figures/savage_worlds_thresholds.png)
 
-Obige Abbildung zeigt die Wahrscheinlichkeiten für Savage Worlds
-Würfelergebnisse mit explodierenden Assen, sowie Erwartungswert und 10%-
-bzw. 90%-Perzentile für verschiedene Würfel. Zum Vergleich des
-Explosionseffekts ist ebenfalls der Erwartungswert ohne Explosion dargestellt.
+Obige Abbildung zeigt die Erfolgswahrscheinlichkeiten für Fertigkeitsproben mit
+verschiedenen Würfel- und Zielwerten bei Savage Worlds.
+Überraschenderweise steigen die Linien nicht monoton mit dem Würfelwert an.
+Warum das so ist, wird im Folgenden genauer erklärt.
 
 <!--more-->
-
 
 *Savage Worlds* ist ein Pen&Paper-Rollenspielsystem, ähnlich wie *Dungeons and
 Dragons* (DnD) oder *Pathfinder*. Einer der größten mechanischen Unterschiede von
@@ -65,7 +64,14 @@ Der erste Term entspricht dem Erwartungswert bei normalen Würfelwürfen. Der
 zweite Term ensteht aus der Modifikation durch explodierende Asse. Dieser
 zweite Term ist besonders bei kleinen Würfeln groß, weshalb diese
 überproportional stark davon profitieren. Für $$d\geq4$$ (W4 und größer) steigt
-der Erwartungswert aber monoton an, wie auch in der obigen Abbildung zu sehen ist.
+der Erwartungswert aber monoton an.
+
+Die folgende Abbildung zeigt die Wahrscheinlichkeiten für Savage Worlds
+Würfelergebnisse mit explodierenden Assen, sowie Erwartungswert und 10%-
+bzw. 90%-Perzentile für verschiedene Würfel. Zum Vergleich des
+Explosionseffekts ist ebenfalls der Erwartungswert ohne Explosion dargestellt.
+
+![](/figures/savage_worlds_probabilities.png)
 
 Um die tatsächliche "Würfelperformance" auszuwerten ist der Mittelwert
 allerdings nicht geeignet. Sinnvoller ist es, die Erfolgswahrscheinlichkeit für
@@ -85,12 +91,9 @@ r &= t\text{ mod } d.
 Der Zielwert bei Savage Worlds Fertigkeitsproben ist meist 4, allerdings kann
 dieser durch besondere Umstände verändert werden, meist indem vom Wurfergebnis
 eine feste Punktzahl abgezogen wird. Dies ist analog zu einer Erhöhung des
-Zielwerts. Die folgende Abbildung zeigt die Erfolgswahrscheinlichkeiten bei
-verschiedenen Würfeln und Zielwerten.
+Zielwerts. Das Ergebnis ist die erste Abbildung dieses Beitrags.
 
-![](/figures/savage_worlds_thresholds.png)
-
-Zunächst ist zu beachten, dass die Erfolgswahrscheinlichkeiten hier auch für
+Dort ist zunächst zu beachten, dass die Erfolgswahrscheinlichkeiten hier auch für
 nicht-ganzzahlige Würfel aufgetragen sind, indem in obiger Formel naiv
 reelle Würfelwerte eingesetzt wurden.
 Die Kurven für feste Zielwerte $$t$$ sind zwar stetig, weisen aber Knicke auf. Diese
@@ -103,7 +106,7 @@ Würfel verwendet werden. Allerdings sind selbst bei Würfelwert $$d = t-2$$ die
 Erfolgswahrscheinlichkeiten noch leicht gegenüber $$d = t$$ erhöht, **besonders
 bei Zielwert 6: Hier ist die Erfolgswahrscheinlichkeit mit einem W4 höher als
 mit einem W6**. In Zahlen: die Erfolgswahrscheinlichkeit mit W4 ist $$3/16 =
-18,75%$$, mit W6 ist sie $$1/6 \approx 16.67%$$.
+18,75%$$, mit W6 ist sie $$1/6 \approx 16,67%$$.
 
 Die durchgezogene Linie von $$d=t-1$$ zu $$d=t$$ zeigt noch ein weiteres
 überraschendes Verhalten: Die Linien von aller Zielwerte ergänzen sich zu einer Linie.
