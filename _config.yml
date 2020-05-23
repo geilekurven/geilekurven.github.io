@@ -34,7 +34,7 @@ plugins:
 
 markdown: kramdown
 kramdown:
-   math_engine: mathjax
+   math-engine: katex
 
 excerpt_separator: <!--more-->
 
